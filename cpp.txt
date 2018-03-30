@@ -1,0 +1,335 @@
+# include <iostream.h>
+using namespace std;
+int main ()
+{
+    int month, date;
+    cout<<"Enter your numerical month: "; cin>>month; cout<<endl;
+    cout<<"Enter your numerical date: "; cin>>date; cout<<endl;
+    if (month == 3 && date >= 21 || month == 4 && date <= 20)
+    { cout<<"Your sign is Aries"; cout<<endl;}
+    else if (month == 4 && date >= 21 || month == 5 && date <= 21)
+    { cout<<"Your sign is Taurus"; cout<<endl;}
+    else if (month == 5 && date >= 22 || month == 6 && date <= 22)
+    { cout<<"Your sign is Gemini"; cout<<endl;}
+    else if (month == 6 && date >= 23 || month == 7 && date <= 23)
+    { cout<<"Your sign is Cancer"; cout<<endl;}
+    else if (month == 7 && date >= 24 || month == 8 && date <= 23)
+    { cout<<"Your sign is Leo"; cout<<endl;}
+    else if (month == 8 && date >= 24 || month == 9 && date <= 23)
+    { cout<<"Your sign is Virgo"; cout<<endl;}
+    else if (month == 9 && date >= 24 || month == 10 && date <= 23)
+    { cout<<"Your sign is Libra"; cout<<endl;}
+    else if (month == 10 && date >= 24 || month == 11 && date <= 22)
+    { cout<<"Your sign is Scorpio"; cout<<endl;}
+    else if (month == 11 && date >= 24 || month == 12 && date <= 21)
+    { cout<<"Your sign is Saguittarius"; cout<<endl;}
+    else if (month == 12 && date >= 22 || month == 1 && date <= 20)
+    { cout<<"Your sign is Capricorn"; cout<<endl;}
+    else if (month == 1 && date >= 21 || month == 2 && date <= 19)
+    { cout<<"Your sign is Aquarius"; cout<<endl;}
+    else if (month == 2 && date >= 20 || month == 3 && date <= 20)
+    { cout<<"Your sign is Pieces"; cout<<endl;}
+    cout<<endl;
+    system ("pause");
+}
+
+new
+
+#include <stdio.h>
+#include <conio.h>
+#include <ctype.h>
+#define p printf
+#define s scanf
+
+main(){
+int x,y;
+char z;
+
+do{
+gotoxy(15,1);
+p(">>==*==*==*==*==Erika Cris Panagane==*==*==*==*==<<");
+
+p("\n\nEnter your birth month number:	");
+s("%d",&x);
+
+if(x==1){
+p("\nEnter the day of your birth:	");
+s("%d",&y);
+	if(y<19){
+	p("\nYour Zodiac Sign is Capricorn...");
+		p("\nYour horoscope is...\n\n ***You will be lucky in love today!!! you'll get a big surprise from your love one...");
+	}
+	if(y==19||y==21){
+	p("\nYou are a cusp! \nYour Zodiac sign is both Capricorn and Aquarius...");
+	 p("\nYour horoscope is...\n\n ***You have a normal day... your luck was opposed by the negative aura of aquarius...");
+	}
+	else if(y==21||y==22||y==23||y==24||y==25||y==26||y==27||y==28||y==29||y==30||y==31){
+	p("\nYour Zodiac Sign is Aquarius...");
+	 p("\nYour horoscope is...\n\n ***You'll have badluck today... but still don't lose hope...");
+	}
+	else if(y>=32){
+	p("\nINVALID!");
+	}
+  }
+
+else if(x==2){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<19){
+	p("\nYour Zodiac Sign is Aquarius...");
+	p("\nYour horoscope is...\n\n ***You'll have badluck today... but still don't lose hope...");
+	}
+	else if(y==19||y==20){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Aquarius and Pisces...");
+	p("\nYour horoscope is...\n\n ***You'll be chase by luck anywhere you go... but this luck is in a certain time...");
+	}
+	else if(y==21||y==22||y==23||y==24||y==25||y==26||y==27||y==28||y==29){
+	p("\nYour Zodiac Sign is Pisces...");
+	p("\nYour horoscope is...\n\n ***Be proud and happy... because this day is the day that you are waiting for...");
+	}
+	else if(y>=30){
+	printf("\nINVALID!");
+	}
+	}
+else if(x==3){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<19){
+	p("\nYour Zodiac Sign is Pisces...");
+	p("\nYour horoscope is...\n\n ***Be proud and happy... because this day is the day that you are waiting for...");
+	}
+	else if(y==19||y==20){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Pisces and Aries...");
+	p("\nYour horoscope is...\n\n ***enjoy moments because maybe it will be too precious for you this day...");
+	}
+	else if(y==21||y==22||y==23||y==24||y==25||y==26||y==27||y==28||y==29||y==30||y==31){
+	p("\nYour Zodiac Sign is Aries...");
+	p("\nYour horoscope is...\n\n ***if you felt that there is something wrong today... it is just a sign from heaven that you must work for your own good...");
+	}
+	else if(y>=32){
+	p("\nINVALID!");
+	}
+	}
+else if(x==4){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<19){
+	p("\nYour Zodiac Sign is Aries...");
+	p("\nYour horoscope is...\n\n ***if you felt that there is something wrong today... it is just a sign from heaven that you must work for your own good...");
+	}
+	else if(y==19||y==20){
+	p("\nYou are a cusp! \nYour Zodiac sign is both Aries and Taurus...");
+	p("\nYour horoscope is...\n\n ***You need to relax your self... don't over do yourself... it will make you stressed...");
+	}
+	else if(y==21||y==22||y==23||y==24||y==25||y==26||y==27||y==28||y==29||y==30){
+	p("\nYour Zodiac Sign is Taurus...");
+	p("\nYour horoscope is...\n\n ***This day will be unique from your past few days... your smile and laugh will make your day colorful...");
+	}
+	else if(y>=31){
+	p("\nINVALID!");
+	}
+	}
+else if(x==5){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<20){
+	p("\nYour Zodiac Sign is Taurus...");
+	p("\nYour horoscope is...\n\n ***This day will be unique from your past few days... your smile and laugh will make your day colorful...");
+	}
+	else if(y==20||y==21){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Taurus and Gemini...");
+	p("\nYour horoscope is...\n\n ***Double your work...do overload...you'll have a blessing from heaven...");
+	}
+	else if(y==22||y==23||y==24||y==25||y==26||y==27||y==28||y==29||y==30||y==31){
+	p("\nYour Zodiac Sign is Gemini...");
+	p("\nYour horoscope is...\n\n ***This day is yours! anything you want to do will be permitted... and it will make you happy...");
+	}
+	else if(y>=32){
+	p("\nINVALID!");
+	}
+	}
+else if(x==6){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<20){
+	p("\nYour Zodiac Sign is Gemini...");
+		p("\nYour horoscope is...\n\n ***This day is yours! anything you want to do will be permitted... and it will make you happy...");
+	}
+	else if(y==20||y==21){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Gemini and Cancer...");
+		p("\nYour horoscope is...\n\n ***The aura from gemini help you to be lucky today so stand up and be proud...");
+	}
+	else if(y==22||y==23||y==24||y==25||y==26||y==27||y==28||y==29||y==30){
+	p("\nYour Zodiac Sign is Cancer...");
+		p("\nYour horoscope is...\n\n ***This day no one will make you his/her slave... even you do mistakes it will lend you to hidden happiness...");
+	}
+	else if(y>=31){
+	p("\nINVALID!");
+	}
+	}
+else if(x==7){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<20){
+	p("\nYour Zodiac Sign is Cancer...");
+		p("\nYour horoscope is...\n\n ***This day no one will make you his/her slave... even you do mistakes it will lend you to hidden happiness...");
+	}
+	else if(y==20||y==21){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Cancer and Leo...");
+		p("\nYour horoscope is...\n\n ***You'll be appreciated by most people and more friends will come.....");
+	}
+	else if(y==22||y==23||y==24||y==25||y==26||y==27||y==28||y==29||y==30||y==31){
+	p("\nYour Zodiac Sign is Leo...");
+		p("\nYour horoscope is...\n\n ***What a luck you have! this is what you get when you just make your self more confident...");
+	}
+	else if(y>=32){
+	p("\nINVALID!");
+	}
+	}
+else if(x==8){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<22){
+	p("\nYour Zodiac Sign is Leo...");
+	p("\nYour horoscope is...\n\n ***What a luck you have! this is what you get when you just make your self more confident...");
+	}
+	else if(y==22||y==23){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Leo and Virgo...");
+	p("\nYour horoscope is...\n\n ***give importance to people mostly the talkative ones... it will help you on your dream...");
+	}
+	else if(y==24||y==25||y==26||y==27||y==28||y==29||y==30||y==31){
+	p("\nYour Zodiac Sign is Virgo...");
+	p("\nYour horoscope is...\n\n ***This is the day you will remember all your past experience you'll be too emotional today...");
+	}
+	else if(y>=32){
+	p("\nINVALID!");
+	}
+	}
+else if(x==9){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<22){
+	p("\nYour Zodiac Sign is Virgo...");
+	p("\nYour horoscope is...\n\n ***This is the day you will remember all your past experience you'll be too emotional today...");
+	}
+	else if(y==22||y==23){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Virgo and Libra...");
+	p("\nYour horoscope is...\n\n ***This day you must give thanks for all the blessing you've got...");
+	}
+	else if(y==24||y==25||y==26||y==27||y==28||y==29||y==30){
+	p("\nYour Zodiac Sign is Libra...");
+	p("\nYour horoscope is...\n\n ***You'll be happy today...but you need to be careful on some fake friends...");
+	}
+	else if(y>=31){
+	p("\nINVALID!");
+	}
+	}
+else if(x==10){
+p("\nWhat is the date of your birthday?	");
+scanf("%d",&y);
+	if(y<22){
+	p("\nYour Zodiac Sign is Libra...");
+	p("\nYour horoscope is...\n\n ***You'll be happy today...but you need to be careful on some fake friends...");
+	}
+	else if(y==22||y==23){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Libra and Scorpio...");
+	p("\nYour horoscope is...\n\n ***You'll make new friends mostly the artistic ones...");
+	}
+	else if(y==24||y==25||y==26||y==27||y==28||y==29||y==30||y==31){
+	p("\nYour Zodiac Sign is Scorpio...");
+	p("\nYour horoscope is...\n\n ***Your so lucky today! but to make your luck bigger you must always be with a positive thinker friend...");
+	}
+	else if(y>=32){
+	p("\nINVALID!");
+	}
+	}
+else if(x==11){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<22){
+	p("\nYour Zodiac Sign is Scorpio...");
+	p("\nYour horoscope is...\n\n ***Your so lucky today! but to make your luck bigger you must always be with a positive thinker friend...");
+	}
+	else if(y==22||y==23){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Scorpio and Sagittaurus...");
+	p("\nYour horoscope is...\n\n ***Look out for some upcoming good news... be thankful...");
+	}
+	else if(y==24||y==25||y==26||y==27||y==28||y==29||y==30){
+	p("\nYour Zodiac Sign is Sagittaurus...");
+	p("\nYour horoscope is...\n\n ***You'll have a potential in future career today use it wisely...");
+	}
+	else if(y>=31){
+	p("\nINVALID!");
+	}
+	}
+else if(x==12){
+p("\nWhat is the date of your birthday?	");
+s("%d",&y);
+	if(y<22){
+	p("\nYour Zodiac Sign is Sagittaurus...");
+	p("\nYour horoscope is...\n\n ***You'll have a potential in future career today use it wisely...");
+	}
+	else if(y==22||y==23){
+	p("\nYou are a cusp!\nYour Zodiac sign is both Sagittaurus and Capricorn...");
+	p("\nYour horoscope is...\n\n ***You must avoid negative thinker friends to be lucky today...");
+	}
+	else if(y==24||y==25||y==26||y==27||y==28||y==29||y==30||y==31){
+	p("\nYour Zodiac Sign is Capricorn...");
+	p("\nYour horoscope is...\n\n ***You will be lucky in love today!!! you'll get a big surprise from your love one...");
+	}
+	else if(y>=32){
+	p("\nINVALID!");
+	}
+	}
+else{
+printf("\nINVALID!");
+}
+
+p("\n\n Do you want to try again?");
+s("%s",&z);
+clrscr();
+}while(z=='y'||z=='Y');
+
+clrscr();
+p("\n\n>>============>Zodiac Sign Program... Thank you for using it...<==============<<");
+getch();
+
+
+
+next  
+
+
+#include “stdafx.h”
+# include
+using namespace std;
+
+int main ()
+{
+int month, date;
+cout<<“Enter your numerical month: “; cin>>month;
+cout<<“Enter your numerical date: “; cin>>date;
+cout<<endl;
+cout<<endl;
+
+if (month == 1 && date >= 21 && date 0)
+{cout<<“Your zodiac sign is Aquarius”; cout<<endl;} else if (month == 2 && date >= 20 && date 0)
+{ cout<<“Your zodiac sign is Pieces”; cout<<endl;} else if (month == 3 && date >= 21 && date 0)
+{ cout<<“Your zodiac sign is Aries”; cout<<endl;} else if (month == 4 && date >= 21 && date 0)
+{ cout<<“Your zodiac sign is Taurus”; cout<<endl;} else if (month == 5 && date >= 22 && date 0)
+{ cout<<“Your zodiac sign is Gemini”; cout<<endl;} else if (month == 6 && date >= 22 && date 0)
+{ cout<<“Your zodiac sign is Cancer”; cout<<endl;} else if (month == 7 && date >= 23 && date 0)
+{ cout<<“Your zodiac sign is Leo”; cout<<endl;} else if (month == 8 && date >= 24 && date 0)
+{ cout<<“Your zodiac sign is Virgo”; cout<<endl;} else if (month == 9 && date >= 24 && date 0)
+{ cout<<“Your zodiac sign is Libra”; cout<<endl;} else if (month == 10 && date >= 24 && date 0)
+{ cout<<“Your zodiac sign is Scorpio”; cout<<endl;} else if (month == 11 && date >= 23 && date 0)
+{ cout<<“Your zodiac sign is Saguittarius”; cout<<endl;} else if (month == 12 && date >= 22 && date 0)
+{ cout<<“Your zodiac sign is Capricorn”; cout<<endl;
+}
+else
+{ cout<<“Invalid Month or Date”;
+}
+cout<<endl;
+
+system (“pause”);
+return 0;
+}
